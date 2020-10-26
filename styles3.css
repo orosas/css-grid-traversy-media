@@ -1,0 +1,55 @@
+body{
+    background: #100227;
+}
+
+.wrapper{
+    border: 1px solid salmon;
+    display: grid;
+    /* grid-template-columns: repeat(3, 1fr); */
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-auto-rows: minmax(7rem, auto);
+    gap: 1rem;
+    justify-items: stretch; 
+    align-items: strech;
+}
+
+.wrapper > div{
+    background: #ddd ;
+    padding: 1rem;
+}
+
+.wrapper > div:nth-child(odd) {
+    background: rgb(182, 182, 182);
+}
+
+
+.box1{
+    grid-column: 1/3;
+    grid-row: 1/3;
+}
+
+.box2{
+    align-self: end;
+    grid-column: 3;
+    grid-row: 1/3;
+}
+
+.box3{
+    justify-self: end;
+    align-self: flex-start;
+    grid-column: 2/4;
+    grid-row: 3;
+}
+
+.box4{
+    /* Nota: valores por default */
+    /* Nota: Realiza overlap */
+    grid-column: 1;
+    grid-row: 2/4;
+}
+
+
+
+COntinua minuto 27:09
+Video: https://youtu.be/jV8B24rSN5o
+

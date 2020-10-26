@@ -1,0 +1,42 @@
+*{
+background: #100227;
+}
+
+.wrapper {
+    padding: 1.5rem;
+    display: grid;
+    /* Nota: Se requiere asignar un width a las columnas */
+    grid-template-columns: 70% 30%;
+    /* Nota: En lugar de margin, se usa column-gap */
+    /* column-gap: 1rem;
+    row-gap: 2rem; */
+
+    gap: 1rem 3rem;
+}
+
+.wrapper > div{
+    background: #ddd ;
+    padding: 1rem;
+}
+
+.wrapper > div:nth-child(odd) {
+    background: rgb(182, 182, 182);
+}
+
+.wrapper2 {
+    padding: 1.5rem;
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
+
+.wrapper2 > div{
+    background: #ddd ;
+    padding: 1rem;
+}
+
+.wrapper2 > div:nth-child(odd) {
+    background: rgb(182, 182, 182);
+}
+
+Continuar Minuto 7:50
+Video: https://youtu.be/jV8B24rSN5o
